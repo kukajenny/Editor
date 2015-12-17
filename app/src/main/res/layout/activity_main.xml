@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#01579B"
+    android:logo="@drawable/logo"
+    >
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/logo"
+        android:background="@drawable/test_image"
+        android:layout_gravity="center"
+
+        />
+    <LinearLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <!-- 账号 -->
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="fill_parent"
+            style="@style/text_login_user"
+            android:layout_margin="5dp"
+            android:hint="密码"
+            android:layout_height="wrap_content"></EditText>
+            <!--android:singleLine="true"-->
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:layout_margin="5dp"
+            android:singleLine="true"
+            android:inputType="textPassword" />
+        <!-- 登录button -->
+        <CheckBox
+            android:id="@+id/rembmberCheckBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="记住账号"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/signin_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_below="@id/password_edit"
+            android:layout_alignRight="@id/password_edit"
+            android:text="登陆"
+            android:background="@drawable/buttonstyle"></Button>
+            //android:background="@drawable/blue_button" />
+    </LinearLayout>
+
+</LinearLayout>

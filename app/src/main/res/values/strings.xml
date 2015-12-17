@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Editor</string>
+
+    <string name="username">账号:</string>
+    <string name="userhint">Email或手机号</string>
+    <string name="login_label_password">密码:</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
